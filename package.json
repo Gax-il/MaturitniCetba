@@ -5,7 +5,7 @@
   "main": "js/main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "mkdir -p public && cp -r js styles.css index.html public/ && cp -r node_modules/pdfmake/build/* public/js/"
+    "build": "rm -rf public && mkdir -p public/js && cp -r js/* public/js/ && cp styles.css index.html public/ && cp node_modules/pdfmake/build/pdfmake.min.js public/js/ && cp node_modules/pdfmake/build/vfs_fonts.js public/js/"
   },
   "author": "",
   "license": "ISC",
